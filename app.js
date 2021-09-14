@@ -62,10 +62,9 @@ muteBtn.addEventListener('click', () => {
     }
 })
 
-let rect = barreOrange.getBoundingClientRect();
-let largeur = rect.width;
-
 barreOrange.addEventListener('click', (e) => {
+    let rect = barreOrange.getBoundingClientRect();
+    let largeur = rect.width;
     let x = e.clientX - rect.left;
 
     let widthPercent = x*100 / largeur;
@@ -74,10 +73,10 @@ barreOrange.addEventListener('click', (e) => {
     video.currentTime = durationVideo * (widthPercent / 100);
 })
 
-window.addEventListener('resize', () => {
-    rect = barreOrange.getBoundingClientRect();
-    largeur = rect.width;
-})
+// window.addEventListener('resize', () => {
+//     rect = barreOrange.getBoundingClientRect();
+//     largeur = rect.width;
+// })
 
 video.addEventListener('dblclick', () => {
     video.requestFullscreen();
