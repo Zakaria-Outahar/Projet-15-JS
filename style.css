@@ -29,7 +29,7 @@ body{
     width: 100%;
     flex-wrap: wrap;
     background:rgba(0,0,0,0.7);
-    transform:translateY(100%);
+    transform:translateY(90%);
     transition: all 0.2s;
 }
 
@@ -75,10 +75,14 @@ body{
 
 #fullscreen{
     position: absolute;
-    right:5px;
-    top:25px
+    right:15px;
+    top:25px;
 }
 
 #fullscreen img{
     width: 20px;
+}
+
+#volume-slider{
+    background: #000;
 }
